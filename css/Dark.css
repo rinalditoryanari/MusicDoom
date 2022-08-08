@@ -1,0 +1,71 @@
+body.dark {
+    background: #000000;
+}
+.dark .wrapper{
+    background: #000000;
+}
+.dark .main{
+    background: #000000;
+}
+.dark h3{
+    color: #f0f0f0;
+}
+.dark h4{
+    color: #f0f0f0;
+}
+.dark p{
+    color: #f0f0f0;
+}
+.dark input, .dark textarea{
+    background-color: #000000;
+    color: white;
+}
+.dark input[type=button], .dark button{
+    background-color: slategrey;
+    color: white;
+}
+.dark .aplayer{
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background-color: #262626;
+    transition: all ease 0.5s;
+}
+
+.dark span{
+    color: #f0f0f0 !important;
+    font-size: 16px;
+}
+
+.dark .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+    fill: #f0f0f0;
+}
+
+.dark .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
+    background: #000000;
+    height: 4px;
+}
+.dark .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played{
+    height: 4px;
+    background-color: #d10003 !important;
+}
+.dark .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
+    background-color: #d10003 !important;
+}
+
+.dark .aplayer .aplayer-list-light {
+    background-color: #2196F3; 
+}
+
+.dark .aplayer .aplayer-list ol li:hover {
+            background: #d10202; }
+          
+.dark .aplayer .aplayer-list ol li.aplayer-list-light {
+            background: #b95e5e; 
+}
+
+.dark .loginform{
+    border: 10px solid black;
+    box-shadow: 0 0 5px white;
+}

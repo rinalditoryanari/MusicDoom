@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MusicDoom</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    
+  </head>
+  <body>
+
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="images/1.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="images/2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="images/3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="images/4.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+
+
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <div class="grid-info-form">
+        <h5 class="titleweb">Music Doom</h5>
+        <h3 class="titlepage">CREATE ACCOUNT </h3>
+        <a id="btn-login" href="#login" class="read-more-1 btn">Get Started</a>
+      </div>
+<!--manual navigation end-->
+</div>
+
+<section class="w3l-login-6" id="form-login">
+<div id="login" class="login-hny">
+<div class="form-content">
+  <div class="form-right">
+    <div class="overlay">
+      <div class="grid-info-form">
+        <h5>Music Doom</h5>
+        <h3>Listening is Everything</h3>
+        <h4 style="margin-top: 30px">Millions of songs and podcasts. No credit card needed.</h4>
+      </div>
+    
+    </div>
+  </div>
+  <div class="form-left">
+    <div class="middle">
+      <h4>Login</h4>
+      <p>Input Your Account.</p>
+    </div>
+    <form action="#" method="post" class="signin-form" id="login-form">
+        <div class="form-input">
+        <label>Email</label>
+        <input type="text" name="email" id="email" placeholder="username@domain.com" onfocusout="cekemail()">
+        <p id='alert-email' style="color: red;"></p>
+      </div>
+      <div class="form-input">
+        <label>Password</label>
+        <input type="password" name="pass" id="pass" placeholder="8 character or more" onfocusout="cekpass()">
+           <p id='alert-pass' style="color: red;"></p>
+      </div>
+      <input class="btn"type="button" name="login" id="login" value="Login" onclick="loginlogin()">
+      <div id="signupbutton">
+        <label  class="container"> New to Music Doom? <a href="Signup.html">Join Now</a>
+        </label>
+      </div>
+    </form>
+    
+  </div>
+  
+</div>
+
+</div>
+</section>
+    <!--image slider end-->
+    <script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 4){
+        counter = 1;
+      }
+    }, 5000);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script type="text/javascript" src="js/login.js" ></script>
+
+  </body>
+</html>
+      

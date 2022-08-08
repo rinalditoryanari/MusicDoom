@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>MusicDoom</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords"
+		content="Music Player Doom" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta tag Keywords -->
+	<!--/Style-CSS -->
+	<link rel="stylesheet" href="css/login.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--//Style-CSS -->
+</head>
+
+<body>
+	<!-- /login-section -->
+	<section class="w3l-login-6">
+		<div class="login-hny">
+			<div class="form-content">
+				<div class="form-right">
+					<div class="overlay">
+						<div class="grid-info-form">
+							<h5>Music Doom</h5>
+							<h3>Listening is Everything</h3>
+							<h4 style="margin-top: 30px">Millions of songs and podcasts. No credit card needed.</h4>
+							
+						</div>
+					
+					</div>
+				</div>
+				<div class="form-left">
+					<div class="middle">
+						<h4>Join Us</h4>
+						<p>Create Your Account.</p>
+					</div>
+					<form class="signin-form">
+							<div class="form-input">
+								<label>Username</label>
+								<input type="text" name="user" id="user" placeholder="username" onfocusout="cekname()">
+								<p id='alert-name' style="color: red;"></p>
+							</div>
+							<div class="form-input">
+								<label>Email</label>
+								<input type="text" name="email" id="email" placeholder="username@domain.com" onfocusout="cekemail()">
+                    			<p id='alert-email' style="color: red;"></p>
+							</div>
+							<div class="form-input">
+								<label>Password</label>
+								<input type="password" name="pass" id="pass" placeholder="8 character or more" onfocusout="cekpass()">
+                   				<p id='alert-pass' style="color: red;"></p>
+							</div>
+								<input class="btn"type="button" name="signup" id="signup" value="Sign Up" onclick="signupup()">
+							<div id="signupbutton">
+								<label  class="container"> Have a Account ? <a href="Login.html">Sign In</a>
+								</label>
+							  </div>
+					</form>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+    <script type="text/javascript" src="js/login.js" ></script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+section {
+	text-align: center;
+}
+section {
+	top: 50px;
+}
+main {
+    text-align: center;
+}
+.item {
+    width: 22%;
+    float: left;
+	align-items: center;
+	padding: 8px 12px;
+	border-radius: 8px;
+	margin: 2% 0.3%;
+}
+
+.thumb {
+	width: 100%;
+	border-radius: 4px;
+}
+.details {
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: "ellipsis";
+}

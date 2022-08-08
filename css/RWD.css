@@ -1,0 +1,125 @@
+@media only screen and (min-width:920px){
+    header div{
+        display: inline-block;
+    }
+    .menu-toggle{
+        display: none;
+    }
+    .srt-menu{
+        display: inline-block;
+    }
+    .album-grid{
+        width: 21%;
+        float: left;
+        margin: 2%;
+        display: block;
+    }
+    .album-poster{
+        position: relative;
+        display: block;
+        border-radius: 7px;
+        overflow: hidden;
+        box-shadow: none;    		
+        transition: all ease 0.4s;
+    }
+    .album-poster:hover{
+        box-shadow: 0 15px 35px #3d2173a1;            
+        transform: translateY(-5px);
+    }
+
+    .srt-menu li a {
+        color:rgb(0, 0, 0);
+        margin:1px 0; 
+        padding: 20px;
+        text-decoration:none;
+        font-size: 1.2em;
+        font-weight: 1000;
+    }
+    .srt-menu li {
+        float:          left;
+        position:       relative;
+        margin-left:1px;
+        height:25px;
+    }
+    .switch{
+        margin-top: 5px;
+    }
+
+    .aplayer{
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background-color: #fff;
+    transition: all ease 0.5s;
+    }
+    .aplayer.showPlayer{
+    bottom: 0;
+    width: 80%;
+    margin: 0 10%;
+    }
+
+
+    span{
+        color: #000 !important;
+        font-size: 16px;
+    }
+
+    .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
+        background: #e0e0e0;
+        height: 5px;
+    }
+    .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played{
+        height: 5px;
+        background-color: #2196F3 !important;
+    }
+    .aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
+        background-color: #2196F3 !important;
+    }
+
+    .aplayer .aplayer-icon{
+        width: 20px;
+        height: 20px;
+    }
+    .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+        fill: #000;
+    }
+
+    .aplayer .aplayer-info .aplayer-music{
+        margin-bottom: 5px;
+    }
+
+    .loginform{
+        width: 30%;
+        padding: 15px 10px 40px;
+        border: 10px solid white;
+        margin: 70px auto;
+        border-radius: 10px;
+        font-size: 13px;
+        box-shadow: 0 0 5px black;
+    }
+    
+    .loginform span{
+        font-size: 18px;
+        font-weight: 700;
+        margin: 2px 0;
+    }
+    input[type=text], [type=password], input[type=email], input[type=number] {
+        width: 96%;
+        padding-left: 5px;
+        margin-bottom: 10px;
+        margin-top: 8px;
+        box-shadow: 0 0 5px #fff;
+        border: 2px solid #808080;
+        font-size: 1em;
+    }
+    input {
+        width: 100%;
+        display: block;
+        margin: 1px 0;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+}

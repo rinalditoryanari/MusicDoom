@@ -1,0 +1,33 @@
+#stack{
+    display: inline-block;
+    width: 100%;
+}
+#buttonsection{
+    display: inline-block;
+    width: 100%;
+}
+#buttonsection input{
+    float: right;
+    width: fit-content;
+}
+#coversong{
+    width: 30%;
+    margin: 1%;
+}
+#editinput{
+    float: right;
+    width: 65%;
+    margin: 1%;
+}
+input[type="number"]{
+    width: 25%
+}
+#savedelete{
+    display: inline-block;
+    width: 32%;
+}
+#savedelete input{
+    width: 44%;
+    margin: 3%;
+    float: left;
+}
